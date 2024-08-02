@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "viewport"content = "width = device-width,initial-scale = 1.0">
+    <title>Zoltar: Consultoría del más allá</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="parallax">
+    <div class="contenedor-principal">
+    <header>
+        <a href="index.html">
+            <img class="logomb" src="logomobile.png">
+            </a>
+          
+            <a href="#" class="icono" onclick="myFunction()">   
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+     <nav id="navegador">
+            <a class="nav-movil" href="sobre.html" >Sobre mi</a>
+            <a class="nav-movil" href="servicios.html">Servicios</a>
+            <a href="index.html">
+                <img class="logo" src="logo.png">
+                </a>
+            <a class="nav-movil marcado-header" href="tienda.html">Tienda</a>
+            <a class="nav-movil" href="clientes.html">Clientes<br>Satisfechos</a>
+       </nav>
+    </header>
+    </div>
+
+    <section>
+        <title class="titulos"> Tienda </title>
+
+
+        <div class="contenedor-tienda">
+            <div class="caja-tienda"> 
+                <img class="img-tienda" src="libro.png" alt="" onclick="ampliarImagen(this)">
+                <div class="info-tienda">
+                    <div class="titulo-tienda"><p>Libro</p></div>
+                    <div class="texto-tienda">
+                        <p>El manual del espiritismo para principiantes de Zoltar S. Paladino, 
+                            la guía indispensable para adentrarse al mundo de lo desconocido.
+                        </p>
+                    </div>
+                    <div class="precio-tienda"><p>$14.000</p></div>
+                </div>
+               
+
+            </div> 
+
+            <div class="caja-tienda"> 
+                <img class="img-tienda" src="tarot.png" alt="" onclick="ampliarImagen(this)">
+                <div class="info-tienda">
+                    <div class="titulo-tienda"><p> Mazo de Tarot</p></div>
+                    <div class="texto-tienda">
+                        <p>Arcanos Míticos Latinos, una colección ideada a partir de leyendas y mitos de Latinoamérica, 
+                            diseñada por  <a href="https://www.instagram.com/crisa.joaquin/?hl=en" target="_blank" class="crisa">Joaquín Crisafulli</a>.
+                        </p>
+                    </div>
+                    <div class="precio-tienda"><p>$6.500</p></div>
+                </div>
+            </div>  
+
+            <div class="caja-tienda"> 
+                <img class="img-tienda" src="kit.png" alt="" onclick="ampliarImagen(this)">
+                <div class="info-tienda">
+                    <div class="titulo-tienda"><p>Kit esencial para divinancia</p></div>
+                    <div class="texto-tienda">
+                        <p>Kit básico con todos los elementos e ingredientes necesarios para la divinancia. 
+                            Consultar por privado los contenidos.
+                        </p>
+                    </div>
+                    <div class="precio-tienda"><p>$20.000</p></div>
+                </div>
+            </div> 
+
+            <div class="caja-tienda"> 
+                <img class="img-tienda" src="cristales.png" alt="" onclick="ampliarImagen(this)">
+                <div class="info-tienda">
+                    <div class="titulo-tienda"><p>Cristales de protección y curación</p></div>
+                    <div class="texto-tienda">
+                        <p>Cristales con diferentes propiedades protectoras y curativas.
+                             Consultar por privado para elegir el cristal perfecto para usted.
+                        </p>
+                    </div>
+                    <div class="precio-tienda"><p>$3.000</p></div>
+                </div>
+            </div> 
+
+        </div>   
+
+        <div id="modal" class="modal">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <img id="imagenModal" class="imagen-modal">
+        </div>
+
+
+
+        <div class="publicidad">
+            <iframe src="http://produccionup.digital/web/mmoral35/anuncio.html" scrolling="no" frameborder="0"></iframe>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </section>
+
+    <footer>
+
+     
+       <div class="contacto-link"><a href="contacto.html">
+              <img  src="mail.png" class="contacto-img"></a>  
+       </div>
+       
+       <div class="footer-text">
+        <h1>© 2023 ZOLTAR: Consultoría del más allá</h1> 
+       </div>
+    
+    
+    </footer>
+
+    <div class="presentacion">
+        <p class="presentacion-texto">diseñado por </p>   
+        <a href="presentacion.html" class="presentacion-link" target="_blank"> Gabriela Villagra</a> 
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navegador");
+          if (x.className === " ") {
+            x.className += " responsive";
+          } else {
+            x.className = " ";
+          }
+        }
+      </script>
+
+
+
+<script>
+function ampliarImagen(imagen) {
+  var modal = document.getElementById('modal');
+  var imagenModal = document.getElementById('imagenModal');
+  modal.style.display = 'block';
+  imagenModal.src = imagen.src;
+}
+
+function cerrarModal() {
+  var modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+ 
+</script>
+
+
+
+
+
+
+</body>
+</html>
